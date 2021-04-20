@@ -1,0 +1,21 @@
+.App {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  grid-template-rows: calc(100% - 80px) 80px;
+  grid-template-columns: 316px auto;
+}
+
+.App-logo {
+  height: 33px;
+  pointer-events: none;
+}
+
+.chat-space {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-left: 1px solid #E4E4E4;;
+}

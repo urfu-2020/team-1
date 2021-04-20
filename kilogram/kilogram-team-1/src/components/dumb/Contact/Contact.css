@@ -1,0 +1,60 @@
+.contact {
+    padding: 10px 5px 0 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.name-message-container {
+    display: block;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+.name, .message {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.short {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.name {
+    font-size: 13px;
+    font-weight: 900;
+    margin: 0 0 5px 0;
+}
+
+.message {
+    margin: 5px 0 10px 0;
+    font-size: 12px;
+    width: 210px;
+    height: 15px;
+    text-overflow: ellipsis;
+}
+
+.message.long {
+    width: 91%;
+    height: 100%;
+}
+
+.contact.long {
+    height: auto;
+}
+
+.contact.long .name-message-container {
+    height: 100%;
+    width: 91%;
+}
+
+.contact.short:hover {
+    background: rgba(255, 0, 0, 0.1);
+}

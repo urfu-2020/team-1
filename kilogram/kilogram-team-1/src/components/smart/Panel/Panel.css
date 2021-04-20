@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+.panel {
+    height: calc(100% - 107px);
+    overflow: scroll;
+    padding: 0;
+    margin: 20px 0 0 0;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.panel-head-container {
+    padding: 0 19px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.panel-container {
+    width: 306px;
+    padding: 22px 0 0;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.search-bar {
+    width: 252px;
+    background: rgba(228, 228, 228, .5) url('../../../pic/search.svg') no-repeat scroll 20px 7px;
+    background-size: 17px 17px;
+    border-radius: 6px;
+    border: none;
+    height: 33px;
+    padding: 2px 0 2px 50px;
+    margin-right: 20px;
+}
+
+.search-bar::placeholder {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact {
+    display: flex;
+}
+
+.navigation-block {
+    border-top: #E4E4E4 1px solid;
+    display: flex;
+}
+
+.panel__button_left, .panel__button_right {
+    outline: none;
+    height: 8vh;
+    width: 49%;
+    border: none;
+}
+
+.panel__button_left:focus, .panel__button_right:focus {
+    outline: 2px solid #a2a2a2;
+}
+
+.panel__button_right {
+    background: white url("../../../pic/free-icon-settings-2099058.svg") center/35px 35px no-repeat;
+    opacity: 0.5;
+}
+
+.panel__button_left {
+    background: white url("../../../pic/free-icon-user-848043.svg") center/35px 35px no-repeat;
+    opacity: .5;
+    border-right: 1px solid #D7D7D7;
+}
